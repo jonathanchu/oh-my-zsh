@@ -50,3 +50,6 @@ function extract() {
   fi
 }
 
+mkinit () {
+	mkdir "$@" && touch "$@"/__init__.py;
+}
