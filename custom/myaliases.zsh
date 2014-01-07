@@ -12,18 +12,21 @@ alias flushdns="dscacheutil -flushcache"
 alias conf='mate /etc/hosts /Users/jonathan/.bashrc /Users/jonathan/.bash_profile /Users/jonathan/.gitconfig /etc/apache2/httpd.conf /etc/apache2/users/jonathan.conf'
 alias apachectl='sudo apachectl'
 alias rs='python manage.py runserver'
+alias pm='python manage.py'
 alias delmongolock="rm /usr/local/var/mongodb/mongod.lock"
 alias recoverdbs="rm /usr/local/var/mongodb/mongod.lock /usr/local/var/postgres/postmaster.pid"
 alias pyserve="python -m SimpleHTTPServer"
 # old habits die hard
 alias mate="subl"
 alias ss="sentry start"
+alias myhistory="history | awk '{print $2}' | sort | uniq -c | sort -rn | head"
 
 # virtualenv aliases
 # http://blog.doughellmann.com/2010/01/virtualenvwrapper-tips-and-tricks.html
 alias v='workon'
 alias v.deactivate='deactivate'
-alias v.mk='mkvirtualenv --distribute'
+#alias v.mk='mkvirtualenv --distribute'
+alias v.mk='mkvirtualenv'
 alias v.rm='rmvirtualenv'
 alias v.switch='workon'
 alias v.add2virtualenv='add2virtualenv'
