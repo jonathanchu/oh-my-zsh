@@ -20,6 +20,7 @@ alias pyserve="python -m SimpleHTTPServer"
 alias mate="subl"
 alias ss="sentry start"
 alias myhistory="history | awk '{print $2}' | sort | uniq -c | sort -rn | head"
+alias ipn="ipython notebook"
 
 # virtualenv aliases
 # http://blog.doughellmann.com/2010/01/virtualenvwrapper-tips-and-tricks.html
